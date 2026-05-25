@@ -5,8 +5,6 @@
 
 ## Bill of Materials *(BOM)*
 
-## Bill of Materials (BOM)
-
 | Designator | Componente | Part Number | Cantidad | Proveedor | Función |
 |---|---|---|---|---|---|
 | U1 | Arduino UNO R3 | A000066 | 1 | Arduino / Wokwi | Control principal del sistema |
