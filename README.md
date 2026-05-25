@@ -64,7 +64,6 @@
 │ - Temperatura         │
 │ - Humedad             │
 │ - LDR                 │
-│ - PIR                 │
 └──────────┬────────────┘
            │
            ▼
