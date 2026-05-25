@@ -1,7 +1,7 @@
 # Actividad3
 [Proyecto Wokwi](https://wokwi.com/projects/464805599220546561)
 
-##Cambios realizados
+## Cambios realizados
 
 ## Bill of Materials *(BOM)*
 
