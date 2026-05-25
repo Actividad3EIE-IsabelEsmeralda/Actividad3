@@ -3,6 +3,29 @@
 
 ## Cambios realizados
 
+
+## Arquitectura hardware
+
+![Circuito](imagenes/Circuito.png)
+
+El sistema está basado en un Arduino UNO como controlador principal, integrando sensores ambientales, módulos de comunicación I2C, actuadores y sistemas de señalización.
+
+### **Conexiones**
+
+| Componente | Pin Arduino |
+|---|---|
+| DHT22 | D2 |
+| Servo Motor | D9 |
+| PIR | D8 |
+| LED calefacción | D10 |
+| LED refrigeración | D11 |
+| LED iluminación | D12 |
+| LED humedad | D13 |
+| LCD SDA | A4 |
+| LCD SCL | A5 |
+| RTC SDA | A4 |
+| RTC SCL | A5 |
+
 ## Bill of Materials *(BOM)*
 
 | Designator | Componente | Part Number | Cantidad | Proveedor | Función |
