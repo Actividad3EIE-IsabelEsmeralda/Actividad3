@@ -29,7 +29,7 @@
 | J1 | Bus I2C | 1 | Comunicación LCD y RTC |
 | MEM1 | EEPROM interna Arduino | 1 | Persistencia de configuración |
 
-**### Características principales**
+### **Características principales**
 
 - Alimentación: 5V
 - Plataforma: Arduino UNO
