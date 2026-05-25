@@ -6,7 +6,7 @@
 
 ## Arquitectura hardware
 
-Imágenes/Circuito.png
+[Circuito](https://github.com/Actividad3EIE-IsabelEsmeralda/Actividad3/blob/main/Imágenes/Circuito.png)
 
 El sistema está basado en un Arduino UNO como controlador principal, integrando sensores ambientales, módulos de comunicación I2C, actuadores y sistemas de señalización.
 
