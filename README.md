@@ -6,7 +6,7 @@
 
 ## Arquitectura hardware
 
-[Circuito](Imágenes/Circuito.png)
+Imágenes/Circuito.png
 
 El sistema está basado en un Arduino UNO como controlador principal, integrando sensores ambientales, módulos de comunicación I2C, actuadores y sistemas de señalización.
 
