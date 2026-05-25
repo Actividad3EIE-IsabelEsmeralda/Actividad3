@@ -5,8 +5,10 @@
 
 ## Bill of Materials *(BOM)*
 
+## Bill of Materials (BOM)
+
 | Designator | Componente | Part Number | Cantidad | Proveedor | Función |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | U1 | Arduino UNO R3 | A000066 | 1 | Arduino / Wokwi | Control principal del sistema |
 | U2 | LCD I2C 16x2 | LCD1602-I2C | 1 | AZDelivery / Wokwi | Interfaz visual del ascensor |
 | U3 | Sensor DHT22 | AM2302 | 1 | Adafruit / Wokwi | Medición de temperatura y humedad |
