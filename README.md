@@ -5,29 +5,29 @@
 
 ## Bill of Materials *(BOM)*
 
-| Designator | Componente | Cantidad | Función |
-|---|---|---|---|
-| U1 | Arduino UNO R3 | 1 | Control principal del sistema |
-| U2 | LCD I2C 16x2 | 1 | Interfaz visual del ascensor |
-| U3 | Sensor DHT22 | 1 | Medición de temperatura y humedad |
-| U4 | RTC DS1307 | 1 | Gestión de fecha y hora |
-| U5 | Sensor PIR | 1 | Detección de presencia |
-| U6 | LDR | 1 | Detección de iluminación ambiental |
-| U7 | Servo Motor SG90 | 1 | Simulación movimiento del ascensor |
-| RV1 | Potenciómetro | 1 | Ajuste del setpoint de temperatura |
-| SW1 | Pulsador Planta 1 | 1 | Llamada ascensor planta 1 |
-| SW2 | Pulsador Planta 2 | 1 | Llamada ascensor planta 2 |
-| SW3 | Pulsador Planta 3 | 1 | Llamada ascensor planta 3 |
-| SW4 | Pulsador Planta 4 | 1 | Llamada ascensor planta 4 |
-| SW5 | Pulsador Planta 5 | 1 | Llamada ascensor planta 5 |
-| LED1 | LED rojo | 1 | Indicador calefacción |
-| LED2 | LED azul | 1 | Indicador refrigeración |
-| LED3 | LED amarillo | 1 | Indicador iluminación |
-| LED4 | LED verde | 1 | Indicador humedad |
-| R1-R4 | Resistencias 220Ω | 4 | Limitación de corriente LEDs |
-| R5 | Resistencia LDR 10kΩ | 1 | Divisor de tensión LDR |
-| J1 | Bus I2C | 1 | Comunicación LCD y RTC |
-| MEM1 | EEPROM interna Arduino | 1 | Persistencia de configuración |
+| Designator | Componente | Part Number | Cantidad | Proveedor | Función |
+|---|---|---|---|---|---|---|
+| U1 | Arduino UNO R3 | A000066 | 1 | Arduino / Wokwi | Control principal del sistema |
+| U2 | LCD I2C 16x2 | LCD1602-I2C | 1 | AZDelivery / Wokwi | Interfaz visual del ascensor |
+| U3 | Sensor DHT22 | AM2302 | 1 | Adafruit / Wokwi | Medición de temperatura y humedad |
+| U4 | RTC DS1307 | DS1307 RTC | 1 | Maxim Integrated / Wokwi | Gestión de fecha y hora |
+| U5 | Sensor PIR | HC-SR501 | 1 | HC / Wokwi | Detección de presencia |
+| U6 | LDR | GL5528 | 1 | Generic / Wokwi | Detección de iluminación ambiental |
+| U7 | Servo Motor SG90 | SG90 | 1 | TowerPro / Wokwi | Movimiento simulado del ascensor |
+| RV1 | Potenciómetro | WH148 B10K | 1 | Generic / Wokwi | Ajuste del setpoint de temperatura |
+| SW1 | Pulsador Planta 1 | PBS-110 | 1 | Generic / Wokwi | Llamada ascensor planta 1 |
+| SW2 | Pulsador Planta 2 | PBS-110 | 1 | Generic / Wokwi | Llamada ascensor planta 2 |
+| SW3 | Pulsador Planta 3 | PBS-110 | 1 | Generic / Wokwi | Llamada ascensor planta 3 |
+| SW4 | Pulsador Planta 4 | PBS-110 | 1 | Generic / Wokwi | Llamada ascensor planta 4 |
+| SW5 | Pulsador Planta 5 | PBS-110 | 1 | Generic / Wokwi | Llamada ascensor planta 5 |
+| LED1 | LED rojo | 5mm Red LED | 1 | Generic / Wokwi | Indicador calefacción |
+| LED2 | LED azul | 5mm Blue LED | 1 | Generic / Wokwi | Indicador refrigeración |
+| LED3 | LED amarillo | 5mm Yellow LED | 1 | Generic / Wokwi | Indicador iluminación |
+| LED4 | LED verde | 5mm Green LED | 1 | Generic / Wokwi | Indicador humedad |
+| R1-R4 | Resistencias 220Ω | CFR-220R | 4 | Generic / Wokwi | Limitación de corriente LEDs |
+| R5 | Resistencia 10kΩ | CFR-10K | 1 | Generic / Wokwi | Divisor de tensión LDR |
+| J1 | Bus I2C | I2C Bus | 1 | Integrado | Comunicación LCD y RTC |
+| MEM1 | EEPROM interna Arduino | ATmega328P EEPROM | 1 | Integrado | Persistencia de configuración |
 
 ### **Características principales**
 
