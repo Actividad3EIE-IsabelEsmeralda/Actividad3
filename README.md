@@ -27,6 +27,16 @@ El sistema está basado en un Arduino UNO como controlador principal, integrando
 | RTC SDA | A4 |
 | RTC SCL | A5 |
 
+### **Características principales**
+
+- Alimentación: 5V
+- Plataforma: Arduino UNO
+- Comunicación I2C
+- Sensores ambientales integrados
+- Control mediante interrupciones
+- Persistencia EEPROM
+
+  
 ## Bill of Materials *(BOM)*
 
 | Designator | Componente | Part Number | Cantidad | Proveedor | Función |
@@ -53,14 +63,6 @@ El sistema está basado en un Arduino UNO como controlador principal, integrando
 | J1 | Bus I2C | I2C Bus | 1 | Integrado | Comunicación LCD y RTC |
 | MEM1 | EEPROM interna Arduino | ATmega328P EEPROM | 1 | Integrado | Persistencia de configuración |
 
-### **Características principales**
-
-- Alimentación: 5V
-- Plataforma: Arduino UNO
-- Comunicación I2C
-- Sensores ambientales integrados
-- Control mediante interrupciones
-- Persistencia EEPROM
 
 ## **Diagrama de flujo**
 
