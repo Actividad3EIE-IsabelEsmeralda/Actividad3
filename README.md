@@ -37,3 +37,89 @@
 - Sensores ambientales integrados
 - Control mediante interrupciones
 - Persistencia EEPROM
+
+## **Diagrama de flujo**
+
+┌───────────────────────┐
+│       INICIO          │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Inicialización sistema│
+│ - Serial              │
+│ - LCD                 │
+│ - RTC                 │
+│ - DHT22               │
+│ - Servo               │
+│ - Pines               │
+│ - Interrupciones      │
+│ - EEPROM              │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Lectura sensores      │
+│ - Temperatura         │
+│ - Humedad             │
+│ - LDR                 │
+│ - PIR                 │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Gestión ascensor      │
+│ ¿Botón pulsado?       │
+└──────────┬────────────┘
+           │ SI
+           ▼
+┌───────────────────────┐
+│ Mover servo a planta  │
+│ correspondiente       │
+│ Actualizar planta     │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Guardar configuración │
+│ en EEPROM             │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Control temperatura   │
+│ - Activar frío        │
+│ - Activar calor       │
+│ - Histéresis          │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Control humedad       │
+│ - Activar LED humedad │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Control iluminación   │
+│ mediante LDR          │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Actualizar LCD        │
+│ - Planta actual       │
+│ - Presencia           │
+│ - Setpoint            │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│ Registro monitor serie│
+│ CSV + RTC             │
+└──────────┬────────────┘
+           │
+           ▼
+┌───────────────────────┐
+│       LOOP            │
+└───────────────────────┘
