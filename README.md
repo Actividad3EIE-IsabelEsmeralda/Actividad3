@@ -1,4 +1,16 @@
 # Actividad3
+## Introducción
+
+En la actualidad, los sistemas de control ambiental juegan un papel fundamental en la automatización de edificios inteligentes, permitiendo mejorar la eficiencia energética y el confort de los usuarios. Estos sistemas integran sensores, actuadores y unidades de control para monitorizar y regular distintas variables del entorno.
+
+En este proyecto se desarrolla un sistema basado en Arduino orientado a la monitorización y control de variables ambientales como la temperatura, la humedad, la iluminación y la presencia. Además, se incorpora la simulación de un sistema de ascensor, integrando diferentes elementos hardware y lógicas de control en una única solución.
+
+El sistema ha sido diseñado siguiendo una arquitectura modular, donde cada subsistema (sensores, control, visualización y actuación) cumple una función específica. A partir de una implementación inicial, se han introducido mejoras orientadas a aumentar la interactividad, la estabilidad y el realismo del sistema.
+
+Entre estas mejoras destaca la incorporación de un control dinámico del setpoint de temperatura mediante un potenciómetro, la implementación de histéresis para estabilizar el comportamiento del sistema, y el uso de memoria EEPROM para mantener la configuración tras reinicios.
+
+El resultado es un sistema más flexible, robusto e interactivo, que reproduce de forma simplificada el funcionamiento de un sistema real de control ambiental.
+
 [Proyecto Wokwi](https://wokwi.com/projects/464805599220546561)
 
 ## Cambios realizados
