@@ -142,7 +142,7 @@ M --> N[Monitor serie]
 
 N --> O[LOOP]
 O --> C
-
+P[Fin]
 
 
 
