@@ -97,12 +97,11 @@ El sistema está basado en un Arduino UNO como controlador principal, integrando
 
 ## **Diagrama de flujo**
 
-## 📊 Diagrama de flujo
-
 ```mermaid
 flowchart TD
 
 A[INICIO] --> B[Inicialización del sistema]
+
 B --> B1[Serial]
 B --> B2[LCD]
 B --> B3[RTC]
@@ -110,49 +109,41 @@ B --> B4[DHT22]
 B --> B5[Servo]
 B --> B6[Pines]
 B --> B7[Interrupciones]
-B --> B8[EEPROM (setpoint)]
+B --> B8[EEPROM setpoint]
 
 B --> C[Lectura de sensores]
+
 C --> C1[Temperatura]
 C --> C2[Humedad]
 C --> C3[LDR]
-C --> C4[Potenciómetro (setpoint)]
+C --> C4[Potenciómetro setpoint]
 
 C --> D[Gestión ascensor]
-D --> E{¿Botón pulsado?}
+D --> E{Botón pulsado}
 
-E -->|Sí| F[Mover servo a planta]
-F --> G[Actualizar planta]
-E -->|No| H[Continuar]
+E -->|Sí| F[Mover servo y actualizar planta]
+E -->|No| G[Continuar]
 
-G --> I[Actualizar setpoint]
-H --> I
+F --> H
+G --> H
 
-I --> J[Leer potenciómetro]
-J --> K[Guardar setpoint en EEPROM]
-K --> K1[solo si cambia]
+H[Actualizar setpoint] --> I[Guardar en EEPROM]
 
-K --> L[Control temperatura]
-L --> L1[Comparar temp / setpoint]
-L --> L2[Activar frío/calor]
-L --> L3[Histéresis dinámica]
+I --> J[Control temperatura]
+J --> J1[Comparar temp y setpoint]
+J --> J2[Histéresis]
 
-L --> M[Control humedad]
-M --> M1[Activar LED humedad]
+J --> K[Control humedad]
+K --> L[Control iluminación]
 
-M --> N[Control iluminación]
-N --> N1[LDR]
+L --> M[Actualizar LCD]
 
-N --> O[Actualizar LCD]
-O --> O1[Planta]
-O --> O2[Presencia]
-O --> O3[Setpoint]
+M --> N[Monitor serie]
 
-O --> P[Monitor serie]
-P --> P1[CSV + RTC]
+N --> O[LOOP]
+O --> C
 
-P --> Q[LOOP]
-Q --> C
+
 
 
 
