@@ -95,56 +95,36 @@ El sistema está basado en un Arduino UNO como controlador principal, integrando
 
 ---
 
-## **Diagrama de flujo**
+##  Diagrama de flujo
 
 ```mermaid
 flowchart TD
 
-A[INICIO] --> B[Inicialización del sistema]
+A[Inicio] --> B[Inicialización]
 
-B --> B1[Serial]
-B --> B2[LCD]
-B --> B3[RTC]
-B --> B4[DHT22]
-B --> B5[Servo]
-B --> B6[Pines]
-B --> B7[Interrupciones]
-B --> B8[EEPROM setpoint]
-
-B --> C[Lectura de sensores]
-
-C --> C1[Temperatura]
-C --> C2[Humedad]
-C --> C3[LDR]
-C --> C4[Potenciómetro setpoint]
+B --> C[Lectura sensores]
 
 C --> D[Gestión ascensor]
 D --> E{Botón pulsado}
 
 E -->|Sí| F[Mover servo y actualizar planta]
-E -->|No| G[Continuar]
+E -->|No| H[Continuar]
 
-F --> H
-G --> H
+F --> I
+H --> I
 
-H[Actualizar setpoint] --> I[Guardar en EEPROM]
+I[Actualizar setpoint] --> J[Guardar en EEPROM]
 
-I --> J[Control temperatura]
-J --> J1[Comparar temp y setpoint]
-J --> J2[Histéresis]
+J --> K[Control temperatura]
+K --> L[Control humedad]
+L --> M[Control iluminación]
 
-J --> K[Control humedad]
-K --> L[Control iluminación]
+M --> N[Actualizar LCD]
+N --> O[Monitor serie]
 
-L --> M[Actualizar LCD]
-
-M --> N[Monitor serie]
-
-N --> O[LOOP]
-O --> C
-P[Fin]
-
-
+O --> P[Loop]
+P --> C
+```
 
 
 ## Conclusiones
