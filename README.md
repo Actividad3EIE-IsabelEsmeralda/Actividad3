@@ -3,20 +3,18 @@
 
 En la actualidad, los sistemas de control ambiental juegan un papel fundamental en la automatización de edificios inteligentes, permitiendo mejorar la eficiencia energética y el confort de los usuarios. Estos sistemas integran sensores, actuadores y unidades de control para monitorizar y regular distintas variables del entorno.
 
-En este proyecto se desarrolla un sistema basado en Arduino orientado a la monitorización y control de variables ambientales como la temperatura, la humedad, la iluminación y la presencia. Además, se incorpora la simulación de un sistema de ascensor, integrando diferentes elementos hardware y lógicas de control en una única solución.
+En la práctica 3 se se mejora la simulación de un ascensor basado en Arduino. Se integran diferentes elementos hardware y lógicas de control en una única solución. Está orientado a la monitorización y control de variables ambientales como la temperatura, la humedad, la iluminación y la presencia.
 
 El sistema ha sido diseñado siguiendo una arquitectura modular, donde cada subsistema (sensores, control, visualización y actuación) cumple una función específica. A partir de una implementación inicial, se han introducido mejoras orientadas a aumentar la interactividad, la estabilidad y el realismo del sistema.
 
-Entre estas mejoras destaca la incorporación de un control dinámico del setpoint de temperatura mediante un potenciómetro, la implementación de histéresis para estabilizar el comportamiento del sistema, y el uso de memoria EEPROM para mantener la configuración tras reinicios.
+Entre estas mejoras destaca la incorporación de un control dinámico del setpoint de temperatura mediante un potenciómetro, la modificación de la histéresis para estabilizar el comportamiento del sistema de temperatura, y el uso de memoria EEPROM para mantener la configuración tras reinicios de la simulación.
 
-El resultado es un sistema más flexible, robusto e interactivo, que reproduce de forma simplificada el funcionamiento de un sistema real de control ambiental.
+El resultado de estas mejoras es un sistema más flexible, robusto e interactivo. Reproduce de forma simplificada el funcionamiento de un sistema real de control ambiental.
 
-[Proyecto Wokwi](https://wokwi.com/projects/464805599220546561)
+[Proyecto Wokwi Práctica 3](https://wokwi.com/projects/464805599220546561)
 
 ## Cambios realizados
-En la práctica 2 (https://wokwi.com/projects/463563467769274369)que se ha usado como base, se implementó un sistema básico de control ambiental con lectura de sensores, control de actuadores y visualización en LCD, sin posibilidad de modificar parámetros ni almacenar información. 
-
-En la práctica 3 (https://wokwi.com/projects/464805599220546561  se han introducido mejoras:
+En la práctica 2 (https://wokwi.com/projects/463563467769274369)que se ha usado como base, se implementó un sistema básico de control ambiental con lectura de sensores, control de actuadores y visualización en LCD, sin posibilidad de modificar parámetros ni almacenar información. En la práctica 3 (https://wokwi.com/projects/464805599220546561 se han introducido mejoras:
 
 - Se ha añadido un potenciómetro para modificar el setpoint de temperatura en tiempo real. El sistema de climatización pasa a depender no solo de la temperatura medida por el sensor, sino también del valor de consigna (setpoint) definido por el usuario. La función `controlTemperatura` se ha modificado para adaptar la histéresis a este nuevo comportamiento dinámico. Se ha añadido el valor del setPoint al serial.
 
@@ -28,7 +26,7 @@ En la práctica 3 (https://wokwi.com/projects/464805599220546561  se han introdu
 
 - Se ha corregido un conflicto de hardware separando el potenciómetro y el sensor de luz en distintas entradas analógicas, garantizando lecturas estables.
 
-Estas mejoras convierten el sistema en una solución más flexible, estable e interactiva.
+Estas mejoras permiten que el usuario interactue activamente con el sistema.
 
 ## Arquitectura hardware
 
