@@ -1,4 +1,4 @@
-# Actividad3
+# Actividad 3
 ## Introducción
 
 En la actualidad, los sistemas de control ambiental juegan un papel fundamental en la automatización de edificios inteligentes, permitiendo mejorar la eficiencia energética y el confort de los usuarios. Estos sistemas integran sensores, actuadores y unidades de control para monitorizar y regular distintas variables del entorno.
