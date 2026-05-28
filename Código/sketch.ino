@@ -340,7 +340,7 @@ void actualizarLCD(float temp, int presencia) {
       presencia != presenciaAnterior || 
       setpointTemp != setpointAnterior) {
 
-    // 🔵 Línea 1
+    //  Línea 1
     lcd.setCursor(0, 0);
     lcd.print("P:");
     lcd.print(plantaActual);
@@ -348,7 +348,7 @@ void actualizarLCD(float temp, int presencia) {
     lcd.print(setpointTemp);
     lcd.print("   ");
 
-    // 🔴 Línea 2
+    //  Línea 2
     lcd.setCursor(0, 1);
     lcd.print("Pres:");
     lcd.print(presencia ? "SI" : "NO");
